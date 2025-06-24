@@ -1,0 +1,32 @@
+# Configuration for GlobalOptimizer training
+img_dir: /database2/taewoo/dreamscene4d/data/JPEGImages/hosnerf
+mask_dir: /database2/taewoo/dreamscene4d/data/Annotations/hosnerf_out/OriMasks/hosnerf/002
+cam_param_path: /database2/taewoo/dreamscene4d/past_files/cam_params.pkl
+depth_dir: /database2/taewoo/dreamscene4d/data/depth_calibration
+
+canonical_dir: /database2/taewoo/Code/dreamscene4d/gaussians/canonical
+
+intrinsic_path: /database2/taewoo/ExAvatar_RELEASE/fitting/tools/COLMAP/colmap_tmp copy/sparse/0/cameras.txt
+# Output settings
+outdir: ./output
+save_path: hosnerf
+
+# Training parameters
+iters: 10000
+batch_size: 8
+
+name:
+# Learning rate settings
+position_lr_init: 0.00064
+position_lr_final: 0.00064
+position_lr_delay_mult: 0.01
+position_lr_max_steps: 400
+
+ 
+
+
+# Model parameters
+sh_degree: 3  # Spherical harmonics degree
+
+# For multi-object support (future scalability)
+# num_objects: 1
