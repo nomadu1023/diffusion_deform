@@ -10,7 +10,6 @@ venv_*/
 tmp_*
 data?
 data??
-scripts2
 
 model_cache
 
